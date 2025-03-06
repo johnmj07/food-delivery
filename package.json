@@ -1,0 +1,14 @@
+{
+  "name": "food-delivery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "start":"cd backend && npm start",
+      "build": "cd client && npm run build",
+      "postbuild": "mv -f client/build server/src/public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
