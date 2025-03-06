@@ -34,7 +34,7 @@ app.get('*', (req,res)=>{
   res.sendFile(indexFilePath)
 })
 
-const PORT=7000;
+const PORT=process.env.PORT || 7000;
 
 
 app.listen(PORT, ()=>{
