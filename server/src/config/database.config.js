@@ -10,7 +10,7 @@ set('strictQuery', true);
 
 export const dbconnect=async()=>{
   try {
-    connect(process.env.MONGODB_URL)
+    connect(process.env.MONGODB_URI)
     await seedUser();
     await seedFood();
     console.log('Connected to DB successfully---');
